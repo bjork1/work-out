@@ -13,9 +13,8 @@ let db = require("./models");
 //});
 
 mongoose.connect(
-  "mongodb://localhost/workout",
-  //   "mongodb://saltamay:123admin@ds161823.mlab.com:61823/heroku_hg9tjfjl",
-  //"mongodb://heroku_qxgp2dv7:t3qn0ktluan9sjv52mharobqgr@ds045714.mlab.com:45714/heroku_qxgp2dv7",
+  process.env.MONGODB_URI || "mongodb://localhost/workout",
+
   {
     useNewUrlParser: true,
     useFindAndModify: false,
@@ -27,7 +26,7 @@ const PORT = process.env.PORT || 3000;
 const app = express();
 
 //app.use(logger("dev"));
-app.use(express.logger("dev"));
+//app.use(express.logger("dev"));
 
 app.use(morgan("tiny"));
 
