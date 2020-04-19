@@ -13,7 +13,7 @@ let db = require("./models");
 //});
 
 mongoose.connect(
-  process.env.MONGODB_URI || "mongodb://localhost/workout",
+  "mongodb://heroku_qxgp2dv7:t3qn0ktluan9sjv52mharobqgr@ds045714.mlab.com:45714/heroku_qxgp2dv7",
 
   {
     useNewUrlParser: true,
