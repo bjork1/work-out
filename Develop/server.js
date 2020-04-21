@@ -12,14 +12,14 @@ let db = require("./models");
 //useFindAndModify: false,
 //});
 
-mongoose.connect(
-  "mongodb://heroku_qxgp2dv7:t3qn0ktluan9sjv52mharobqgr@ds045714.mlab.com:45714/heroku_qxgp2dv7",
+// mongoose.connect(
+//   "mongodb://heroku_qxgp2dv7:t3qn0ktluan9sjv52mharobqgr@ds045714.mlab.com:45714/heroku_qxgp2dv7",
 
-  {
-    useNewUrlParser: true,
-    useFindAndModify: false,
-  }
-);
+//   {
+//     useNewUrlParser: true,
+//     useFindAndModify: false,
+//   }
+// );
 
 const PORT = process.env.PORT || 3000;
 
